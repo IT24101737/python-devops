@@ -25,7 +25,7 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install pytest pyngrok  # Explicitly install pytest and pyngrok
-        if [ -f req.txt ]; then pip install -r req.txt; fi
+        pip install -r req.txt
    
     - name: Test with pytest
       run: |
